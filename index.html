@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff7e8" />
+  <title>Pixel Party — Quick math games</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Pixel Party home"><span class="brand-mark">✦</span><span>PIXEL<br /><em>PARTY</em></span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="#games">Games</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="play-pill" href="#games">Play now <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="sparkle">✦</span> NO SIGN-UP. JUST PLAY.</p>
+        <h1 id="hero-title">MAKE MATH<br /><span>YOUR PLAYGROUND.</span></h1>
+        <p class="hero-text">Quick games for quick thinkers. Pick a game, beat your best, and make every second count.</p>
+        <a class="primary-button" href="#games">Choose your game <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Pixel Party arcade illustration">
+        <div class="burst burst-one"></div><div class="burst burst-two"></div>
+        <div class="arcade-card"><div class="arcade-screen"><span class="pixel-star">✦</span><b>PLAY<br /><i>SMART</i></b><small>LEVEL UP!</small></div><div class="arcade-controls"><span></span><span></span><span></span><i></i><i></i></div></div>
+        <div class="floating-sticker sticker-a">+ 10 XP</div><div class="floating-sticker sticker-b">LET'S GO!</div>
+      </div>
+    </section>
+
+    <section class="games-section" id="games" aria-labelledby="games-title">
+      <div class="section-heading"><div><p class="eyebrow">PICK YOUR POWER-UP</p><h2 id="games-title">Three games.<br /><span>One big brain.</span></h2></div><p class="section-note">Short rounds, simple controls,<br />and a little math magic.</p></div>
+      <div class="game-grid">
+        <article class="game-card card-snake"><div class="card-top"><span class="number">01</span><span class="card-tag">ARCADE</span></div><div class="game-visual snake-visual"><span class="snake-body">●━●━●</span><span class="apple">✦</span><span class="math-float">+ 7</span><span class="math-float two">× 2</span></div><div class="card-info"><h3>Math Snake</h3><p>Eat the right answers. Grow your streak.</p><button class="card-button" data-game="snake">Play game <span>→</span></button></div></article>
+        <article class="game-card card-dash"><div class="card-top"><span class="number">02</span><span class="card-tag">RUNNER</span></div><div class="game-visual dash-visual"><span class="runner">●</span><span class="track-line"></span><span class="obstacle one"></span><span class="obstacle two"></span><span class="math-float">12 ÷ 3</span></div><div class="card-info"><h3>Number Dash</h3><p>Jump, dodge, and solve at top speed.</p><button class="card-button" data-game="dash">Play game <span>→</span></button></div></article>
+        <article class="game-card card-climb"><div class="card-top"><span class="number">03</span><span class="card-tag">CLIMBER</span></div><div class="game-visual climb-visual"><span class="mountain">⌁⌁</span><span class="truck">▰</span><span class="math-float">9 + 6</span><span class="flag">⚑</span></div><div class="card-info"><h3>Hill Climb Math</h3><p>Balance your ride and reach the answer.</p><button class="card-button" data-game="climb">Play game <span>→</span></button></div></article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works"><div class="how-title"><p class="eyebrow">NO MANUAL NEEDED</p><h2>How to <span>play</span></h2></div><div class="steps"><div class="step"><b>01</b><span>①</span><h3>Pick a game</h3><p>Choose your vibe. Every game starts in one click.</p></div><div class="step"><b>02</b><span>✦</span><h3>Play & learn</h3><p>Use simple controls and solve tiny math challenges.</p></div><div class="step"><b>03</b><span>↗</span><h3>Beat your best</h3><p>Keep your streak alive and chase a new high score.</p></div></div></section>
+    <section class="about-section" id="about"><p class="eyebrow">MADE FOR BETWEEN-THE-BELL MOMENTS</p><h2>Fast games for<br /><span>curious minds.</span></h2><p>Pixel Party is a tiny arcade for big school-day energy. No accounts, no waiting, no complicated rules — just open a game and get going.</p><a href="#games" class="text-link">Back to games <span>↑</span></a></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">✦</span><span>PIXEL<br /><em>PARTY</em></span></a><p>Learn a little. Play a lot.</p><span>© 2025 Pixel Party</span></footer>
+
+  <div class="game-modal" id="game-modal" aria-hidden="true"><div class="modal-shell"><div class="modal-bar"><button class="close-game" aria-label="Close game">← <span>Back to games</span></button><div class="modal-title" id="modal-title">MATH SNAKE</div><div class="modal-score">SCORE <strong id="modal-score">0</strong></div></div><div class="game-stage" id="game-stage"></div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
