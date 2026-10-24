@@ -14,6 +14,8 @@
       <a class="active" href="#games">Games</a>
       <a href="#how-it-works">How it works</a>
       <a href="#about">About</a>
+      <button class="shop-nav" id="shop-open">Shop <b><span id="wallet-points">0</span> pts</b></button>
+      <span class="record-pill">BEST <b id="best-record">0</b></span>
     </nav>
     <a class="play-pill" href="#games">Play now <span>↗</span></a>
   </header>
@@ -47,7 +49,8 @@
   </main>
   <footer><a class="brand" href="#home"><span class="brand-mark">✦</span><span>PIXEL<br /><em>PARTY</em></span></a><p>Learn a little. Play a lot.</p><span>© 2025 Pixel Party</span></footer>
 
-  <div class="game-modal" id="game-modal" aria-hidden="true"><div class="modal-shell"><div class="modal-bar"><button class="close-game" aria-label="Close game">← <span>Back to games</span></button><div class="modal-title" id="modal-title">MATH SNAKE</div><div class="modal-score">SCORE <strong id="modal-score">0</strong></div></div><div class="game-stage" id="game-stage"></div></div></div>
+  <div class="shop-overlay" id="shop-overlay" aria-hidden="true"><div class="shop-window"><div class="shop-header"><div><p class="eyebrow">PIXEL PARTY POWER-UPS</p><h2>Level up your <span>play.</span></h2></div><button class="shop-close" id="shop-close" aria-label="Close shop">×</button></div><div class="shop-wallet">YOUR WALLET <strong><span id="shop-wallet-points">0</span> POINTS</strong></div><div class="shop-items" id="shop-items"></div></div></div>
+  <div class="game-modal" id="game-modal" aria-hidden="true"><div class="modal-shell"><div class="modal-bar"><button class="close-game" aria-label="Close game">← <span>Back to games</span></button><div class="modal-title" id="modal-title">MATH SNAKE</div><div class="powerup-tray" id="active-powerups" aria-live="polite"></div><div class="modal-actions"><button class="modal-shop" id="modal-shop">SHOP</button><div class="modal-score">SCORE <strong id="modal-score">0</strong><span class="modal-best">BEST <b id="modal-best">0</b></span></div></div></div><div class="game-stage" id="game-stage"></div></div></div>
   <script src="app.js"></script>
 </body>
 </html>
